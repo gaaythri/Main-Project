@@ -44,7 +44,7 @@
     <input type="button" name="9" value="9" id="9" onclick="main.result.value +='9'" >
     <input type="button" name="*" value="*" id="*" onclick="main.result.value +='*'"><br><br>
 
-    <input type="button" name ="^" value="^"  id ="^" onclick="exp()"></button>
+    <input type="button" name ="^" value="^"  id ="^" onclick="exp_fun()"></button>
     <input type="button" name="0" value="0" id="0" onclick="main.result.value +='0'">
     <input type="button" name="=" value="=" id="=" onclick="main.result.value = eval(main.result.value)" >
     <input type="button" name="/" value="/" id="/" onclick="main.result.value +='/'"><br><br>
@@ -93,6 +93,26 @@
       document.getElementById('=').disabled=false;
      
    }
+    
+    function exp_fun()
+    {
+         document.getElementById('1').disabled=true;
+      document.getElementById('2').disabled=true;
+      document.getElementById('3').disabled=true;
+      document.getElementById('4').disabled=true;
+      document.getElementById('5').disabled=true;
+      document.getElementById('6').disabled=true;
+      document.getElementById('7').disabled=true;
+      document.getElementById('8').disabled=true;
+      document.getElementById('9').disabled=true;
+      document.getElementById('0').disabled=true;
+      document.getElementById('+').disabled=true;
+      document.getElementById('-').disabled=true;
+      document.getElementById('*').disabled=true;
+      document.getElementById('/').disabled=true;
+      document.getElementById('^').disabled=true;
+      document.getElementById('=').disabled=true;
+    }   
 
 </script>
 </body>
